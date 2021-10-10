@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="Gym App"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/teal_200"
+        android:textSize="30sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="64dp"
+            android:text="See your All Plan"
+            android:id="@+id/allplanbtn"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="64dp"
+            android:layout_below="@+id/allplanbtn"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="see all activity"
+            android:id="@+id/allactivitybtn"/>
+
+        <Button
+            android:id="@+id/aboutbtn"
+            android:layout_width="300dp"
+            android:layout_height="64dp"
+            android:layout_below="@+id/allactivitybtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="About" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed By Kishan Utkarsh"
+        android:id="@+id/devname"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/teal_200"/>
+
+
+</RelativeLayout>
