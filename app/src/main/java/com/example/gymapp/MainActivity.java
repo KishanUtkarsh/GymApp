@@ -66,5 +66,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        allplanbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this , PlanActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

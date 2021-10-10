@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/plancardview"
+    android:padding="10dp"
+    app:cardCornerRadius="25dp"
+    android:elevation="5dp"
+    android:layout_margin="15dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cardviewrl">
+
+        <TextView
+            android:id="@+id/nametv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="NAME"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:id="@+id/emptycheckboxbtn"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/empty_checkbox"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:id="@+id/filledcheckbox"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/filled_checkbox"/>
+
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_below="@+id/nametv1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview1"
+            android:layout_marginTop="15dp"
+            android:id="@+id/timerl"
+            >
+
+            <TextView
+                android:id="@+id/txttimeexplain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Time"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txttimeamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/txttimeexplain"
+                android:text="Zero"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtminut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/txttimeamount"
+                android:text="minutes"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timerl"
+            android:layout_marginTop="15dp"
+            android:text="sort desc"
+            android:layout_marginLeft="15dp"
+            android:textSize="18sp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/textdesctv"
+            android:textStyle="italic"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

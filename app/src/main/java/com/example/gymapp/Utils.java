@@ -8,6 +8,7 @@ public class Utils {
     private static final String TAG = "Utils";
 
     private static ArrayList<GymTraining> alltrainings;
+    private static ArrayList<Plan> usersPlans;
 
     public Utils(){
 
@@ -17,6 +18,11 @@ public class Utils {
 
         if(alltrainings == null){
             alltrainings = new ArrayList<>();
+
+        }
+
+        if(usersPlans == null){
+            usersPlans = new ArrayList<>();
 
         }
 
@@ -60,5 +66,24 @@ public class Utils {
 
     public static void setAlltrainings(ArrayList<GymTraining> alltrainings) {
         Utils.alltrainings = alltrainings;
+    }
+
+    public static ArrayList<Plan> getUsersPlans() {
+        return usersPlans;
+    }
+
+    public static void setUsersPlans(ArrayList<Plan> usersPlans) {
+        Utils.usersPlans = usersPlans;
+    }
+    public static boolean addToUserPlan(Plan plan){
+        Log.d(TAG, "addToUserPlan: started");
+
+        return usersPlans.add(plan);
+    }
+
+    public static boolean removeUserPlan(Plan plan){
+        Log.d(TAG, "removeUserPlan: started");
+
+        return usersPlans.remove(plan);
     }
 }

@@ -33,6 +33,14 @@ public class TrainingActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     //TODO show a dialog
+
+                    AskForDetailDailogBox askForDetailDailogBox = new AskForDetailDailogBox();
+                    Bundle bundle = new Bundle();
+                    bundle.putParcelable("training",incommingtraining);
+                    askForDetailDailogBox.setArguments(bundle);
+                    askForDetailDailogBox.show(getSupportFragmentManager(),"ask for details");
+
+
                 }
             });
         }catch (NullPointerException e){
